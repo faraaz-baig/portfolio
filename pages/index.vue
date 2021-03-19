@@ -22,7 +22,7 @@
           <ArrowRight class="w-5 ml-1" />
         </nuxt-link>
       </div>
-      <a href="#work" class="self-center absolute bottom-0 mb-7"
+      <a href="#work" class="self-center absolute bottom-2 mb-7"
         ><ArrowDown class="w-12 animate-bounce"
       /></a>
     </div>
