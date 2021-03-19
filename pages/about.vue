@@ -25,6 +25,20 @@
         Dip in Personnel Management and Industrial Relations(PG)
       </p>
     </div>
+    <div class="my-24">
+      <h1 class="text-mytext font-bold text-4xl text-center">
+        Workshops Attended 📃
+      </h1>
+      <p class="leading-10 mt-10 tracking-wide text-lg font-medium text-center">
+        Time and Motion study<br />
+        Internal customer concept<br />
+        Stress Management<br />
+        Modern Appraisal system<br />
+        ISO 1400, 14001<br />
+        Train the Trainer<br />
+        Coaching Skills
+      </p>
+    </div>
   </div>
 </template>
 
