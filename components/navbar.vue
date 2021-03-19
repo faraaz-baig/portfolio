@@ -59,7 +59,7 @@ export default {
   border-bottom: 2px solid white;
 }
 .color {
-  background-color: rgba(68, 90, 128, 0.5);
+  background-color: rgba(42, 125, 185, 0.86);
   backdrop-filter: saturate(180%) blur(38px);
 }
 </style>

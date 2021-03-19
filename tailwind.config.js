@@ -2,9 +2,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: "#445ABE",
+        blue: "#2A7DB9",
         myblue: "#4d6fff",
-        mytext: "#3b60ff"
+        mytext: "#2A7DB9"
       },
       fontFamily: {
         sans: ["Inter"]
