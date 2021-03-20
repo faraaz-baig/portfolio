@@ -43,10 +43,13 @@
         <div class="flex flex-col lg:flex-row items-center">
           <Coaching class="w-16" />
           <div class="w-96 text-center lg:text-left">
-            <p class="font-bold text-lg mt-3 lg:ml-4">Recruitment Coaching</p>
+            <p class="font-bold text-lg mt-3 lg:ml-4">
+              Recruitment and Coaching
+            </p>
             <p class="mt-2 px-2 lg:px-0 lg:ml-4">
-              Help recruit staff that has flexibility dealing with situation, an
-              aptitude for learning and development accommodative.
+              Recruitment of staff that has flexibility in dealing with
+              situations, aptitude for learning & developemental and
+              accomodative in nature.
             </p>
           </div>
         </div>
@@ -102,18 +105,6 @@
           </div>
         </div>
         <div class="flex flex-col lg:flex-row items-center">
-          <Hire class="w-16" />
-          <div class="w-96 text-center lg:text-left">
-            <p class="font-bold text-lg mt-3 lg:ml-4">
-              Recruitment and Coaching
-            </p>
-            <p class="mt-2 px-2 lg:px-0 lg:ml-4">
-              Recruitment of staff that has flexibility in dealing with
-              situations, aptitude for learning & developemnt.
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-col lg:flex-row items-center">
           <Visit class="w-16" />
           <div class="w-96 text-center lg:text-left">
             <p class="font-bold text-lg mt-3 lg:ml-4">
@@ -121,6 +112,18 @@
             </p>
             <p class="mt-2 px-2 lg:px-0 lg:ml-4">
               Willing to visit hotels for training and recommendations.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center">
+          <Buy class="w-16" />
+          <div class="w-96 text-center lg:text-left">
+            <p class="font-bold text-lg mt-3 lg:ml-4">
+              Uniforms- suitable materials/design for different departments
+            </p>
+            <p class="mt-2 px-2 lg:px-0 lg:ml-4">
+              Suitable uniform materials for different departments with suitable
+              styles, weather /user friendly , industrial wash materials
             </p>
           </div>
         </div>
