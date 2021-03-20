@@ -35,7 +35,8 @@
           My Services in Hospitality 🏨
         </h1>
         <p class="text-lg sm:text-xl mt-4 w-96 mx-auto text-center">
-          I help top hotels around the world with planning and designing
+          I help hotels around the world with planning and setting up
+          departments and specific SOP's.
         </p>
       </div>
       <div class="h-1/2 grid gap-14 lg:grid-cols-2 grid-cols-1 mt-20 px-2">
@@ -45,7 +46,7 @@
             <p class="font-bold text-lg mt-3 lg:ml-4">Recruitment Coaching</p>
             <p class="mt-2 px-2 lg:px-0 lg:ml-4">
               Help recruit staff that has flexibility dealing with situation, an
-              aptitude for learning and development accommodative
+              aptitude for learning and development accommodative.
             </p>
           </div>
         </div>
@@ -55,7 +56,7 @@
             <p class="font-bold text-lg mt-3 lg:ml-4">Grooming and Hygiene</p>
             <p class="mt-2 px-2 lg:px-0 lg:ml-4">
               Grooming suitable for the service industry. (suitable hairstyles,
-              nail art , type of shoes, how to wear uniforms etc)
+              nail art , type of shoes, how to wear uniforms etc).
             </p>
           </div>
         </div>
@@ -67,7 +68,7 @@
             </p>
             <p class="mt-2 px-2 lg:px-0 lg:ml-4">
               Inventory for fixed and movable items. Discard procedures for
-              fixed and movable items etc
+              fixed and movable items etc.
             </p>
           </div>
         </div>
@@ -77,7 +78,7 @@
             <p class="font-bold text-lg mt-3 lg:ml-4">Decorations</p>
             <p class="mt-2 px-2 lg:px-0 lg:ml-4">
               Suitable flower arrangements for on and off seasons, and
-              decorations for occasions
+              decorations for occasions.
             </p>
           </div>
         </div>
@@ -87,7 +88,7 @@
             <p class="font-bold text-lg mt-3 lg:ml-4">staff productivity</p>
             <p class="mt-2 px-2 lg:px-0 lg:ml-4">
               organize the task in a specific order/manner so that they can
-              finish the tasks on time without stress
+              finish the tasks on time without stress.
             </p>
           </div>
         </div>
@@ -96,7 +97,30 @@
           <div class="w-96 text-center lg:text-left">
             <p class="font-bold text-lg mt-3 lg:ml-4">Cost control measures</p>
             <p class="mt-2 px-2 lg:px-0 lg:ml-4">
-              Introducing waste to wealth themes in the department
+              Introducing waste to wealth themes in the department.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center">
+          <Hire class="w-16" />
+          <div class="w-96 text-center lg:text-left">
+            <p class="font-bold text-lg mt-3 lg:ml-4">
+              Recruitment and Coaching
+            </p>
+            <p class="mt-2 px-2 lg:px-0 lg:ml-4">
+              Recruitment of staff that has flexibility in dealing with
+              situations, aptitude for learning & developemnt.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center">
+          <Visit class="w-16" />
+          <div class="w-96 text-center lg:text-left">
+            <p class="font-bold text-lg mt-3 lg:ml-4">
+              Property Visits if Required
+            </p>
+            <p class="mt-2 px-2 lg:px-0 lg:ml-4">
+              Willing to visit hotels for training and recommendations.
             </p>
           </div>
         </div>
