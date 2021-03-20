@@ -9,7 +9,48 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "I am a Professional in Hospitality and Education field"
+        content:
+          "Hello! I'm Mariam. I am a Professional in Hospitality and Education field"
+      },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content:
+          "Hello! I'm Mariam. I am a Professional in Hospitality and Education field"
+      },
+      { hid: "og:site_name", name: "og:site_name", content: "Mariam" },
+      { hid: "og:title", name: "og:title", content: "Mariam - Portfolio" },
+      {
+        hid: "twitter:title",
+        name: "twitter:title",
+        content: "Mariam - Education and Hospitality Professional"
+      },
+      { hid: "twitter:site", name: "twitter:site", content: "@kanagapothil" },
+      {
+        hid: "twitter:creator",
+        name: "twitter:creator",
+        content: "@kanagapothil"
+      },
+      {
+        hid: "twitter:card",
+        name: "twitter:card",
+        content: "Mariam | Education and Hospitality Professional"
+      },
+      {
+        hid: "twitter:description",
+        name: "twitter:description",
+        content:
+          "Hello! I'm Mariam. I am a Professional in Hospitality and Education field"
+      },
+      {
+        hid: "apple-mobile-web-app-title",
+        name: "apple-mobile-web-app-title",
+        content: "Mariam - Education and Hospitality Professional"
+      },
+      {
+        hid: "mobile-mobile-web-app-capable",
+        name: "apple-mobile-web-app-capable",
+        content: "Mariam - Education and Hospitality Professional"
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/M..svg" }]
@@ -37,7 +78,7 @@ export default {
       lang: "en"
     },
     icon: {
-      source: "/static/M..svg"
+      source: "/M..svg"
     }
   },
 
