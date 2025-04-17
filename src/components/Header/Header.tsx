@@ -32,7 +32,7 @@ const Header = () => {
           <a href="https://faraazventures.com" rel="noopener">
           Angel Investor.
           </a>
-        </span>I'm currenty building{" "}
+        </span> I'm currenty building{" "}
         <span className="highlight">
           <a href="https://arclinelabs.com" rel="noopener">
           Arcline Labs
