@@ -41,7 +41,7 @@ export const projects: ReadonlyArray<Project> = [
     id: "airbound",
     title: "Airbound",
     description:
-      "A drone company is building the world's most efficient drones to reduce the cost of delivery.",
+      "Built the world's most efficient drones to reduce the cost of delivery.",
     url: "https://airbound.co",
     year: 2021,
     color: "#FFFFFF",
@@ -88,7 +88,7 @@ export const projects: ReadonlyArray<Project> = [
   {
     id: "cerebras-fellow",
     title: "Cerebras Fellow",
-    description: "A fellowship program for AI engineers and researchers by Cerebras",
+    description: "A fellowship for AI engineers and researchers by Cerebras",
     url: "https://www.cerebras.ai/fellows",
     year: [2025],
     color: "#FFFFFF",
