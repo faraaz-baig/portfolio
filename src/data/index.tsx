@@ -179,7 +179,7 @@ It doesn’t touch your personal calls. It only engages with strangers—and sen
     id: "unscan-ai",
     title: "Unscan AI",
     description: "Using drones to automate inventory management in warehouses",
-    url: "https://phosphoricons.com",
+    url: "https://startupgraveyard.io/",
     year: 2024,
     Icon: Camera,
     theme: "inverse",
