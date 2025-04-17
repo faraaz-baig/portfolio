@@ -159,7 +159,7 @@ It doesn’t touch your personal calls. It only engages with strangers—and sen
   {
     id: "impact-act",
     title: "Impact Act",
-    description: "Self-improvement podcast that I started in my teenage years.",
+    description: "Ran a Self-improvement podcast that I started in my teenage years.",
     url: "https://podcasts.apple.com/in/podcast/impact-act/id1501541515",
     year: 2019,
     color: "#FFFFFF",
@@ -178,7 +178,7 @@ It doesn’t touch your personal calls. It only engages with strangers—and sen
   {
     id: "unscan-ai",
     title: "Unscan AI",
-    description: "Using drones to automate inventory management in warehouses",
+    description: "Built drones to automate inventory management in warehouses",
     url: "https://startupgraveyard.io/",
     year: 2024,
     Icon: Camera,
