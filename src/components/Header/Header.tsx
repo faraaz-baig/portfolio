@@ -35,10 +35,9 @@ const Header = () => {
         </span> I'm currenty building{" "}
         <span className="highlight">
           <a href="https://arclinelabs.com" rel="noopener">
-          Arcline Labs
+          Arcline Labs.
           </a>
-        </span> . 
-        I spend my downtime riding horses, travelling and racing motorbikes.
+        </span> I spend my downtime riding horses, travelling and racing motorbikes.
       </h1>
       <IconContext.Provider value={iconStyle}>
         <div className="links">
