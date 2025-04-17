@@ -28,7 +28,7 @@ const Header = () => {
     <motion.header variants={variants} initial="start" animate="end">
       <h1 className="intro">
         I'm
-        <span className="highlight">Faraaz Baig</span>a 23 year old serial entrepreneur and an <span className="highlight">
+        <span className="highlight"> Faraaz Baig</span> a 23 year old serial entrepreneur and an <span className="highlight">
           <a href="https://faraazventures.com" rel="noopener">
           Angel Investor.
           </a>
