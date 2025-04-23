@@ -147,7 +147,7 @@ It doesn’t touch your personal calls. It only engages with strangers—and sen
         <p>
         Launched in 2018, Emergent Ventures is a low-overhead fellowship and grant program that supports entrepreneurs and brilliant minds with highly scalable, "zero to one" ideas for meaningfully improving society. Mercatus Center faculty director Tyler Cowen administers the program. 
         </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/OuvrZFJLXSk?si=PzZkyhTHNdISDNOn&amp;start=611" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/OuvrZFJLXSk?si=PzZkyhTHNdISDNOn&amp;start=611" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
         <Heading id="hello-huebert">What did you do there?</Heading>
         <p>
@@ -190,7 +190,7 @@ It doesn’t touch your personal calls. It only engages with strangers—and sen
         <p>
         We built a drone-based AI-powered inventory management solution for warehouses, using autonomous drones to scan and monitor inventory, improving accuracy and efficiency. The system uses computer vision and machine learning to analyze images, identify misplaced items, and reconcile inventory discrepancies, ultimately reducing costs and increasing productivity.
         </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HY5ttMDubjI?si=dt8M8z-OGptmZqeg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/HY5ttMDubjI?si=dt8M8z-OGptmZqeg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         
         <Heading id="providing-great-dx">What happened to it?</Heading>
 

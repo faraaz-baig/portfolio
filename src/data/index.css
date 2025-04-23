@@ -1,5 +1,5 @@
 img {
-    width: 35rem;
+    width: 100%;
 }
 
 .podcast {
@@ -8,3 +8,4 @@ img {
     overflow:hidden;
     border-radius:10px;
 }
+
