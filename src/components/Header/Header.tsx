@@ -41,7 +41,7 @@ const Header = () => {
       </h1>
       <IconContext.Provider value={iconStyle}>
         <div className="links">
-          <a href="https://github.com/faraazbaig">
+          <a href="https://github.com/faraaz-baig">
             <GitBranch /> GitHub
           </a>
           <a href="https://twitter.com/faraazofficial">
