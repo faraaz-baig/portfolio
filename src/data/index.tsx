@@ -8,11 +8,10 @@ import {
   Drone,
   Brain,
   Camera,
+  DeviceTabletSpeaker,
 } from "@phosphor-icons/react";
 
 import Heading from "../components/Heading/Heading";
-
-import airbound_jpg from "../assets/airbound.jpg";
 
 import flipkart_png from "../assets/flipkart.png";
 
@@ -54,7 +53,7 @@ export const projects: ReadonlyArray<Project> = [
         <p>
         Airbound is building the world's most advanced drones to reduce the cost of delivery by over 137x. By improving structural efficiency by 7x and aerodynamics by 6x, our drones create a world where no delivery costs more than a nickel.
         </p>
-        <img src={airbound_jpg} alt="" />
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/9lAc1CxBbAI?si=Ka7_C2IifjMcK8tL" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         <Heading id="building-realtime-tools">Building the company from zero</Heading>
         <p>
         When I first conceptualized Airbound, my vision was straightforward—imagine Kirana Kart, but with drone deliveries. I was fascinated by the potential to revolutionize last-mile delivery in India's bustling urban centers, bringing everyday essentials to doorsteps through the air. However, reality quickly set in as I navigated India's complex airspace regulations. The dream of food and grocery delivery via drones wasn't immediately viable in the regulatory landscape.
@@ -209,6 +208,55 @@ It doesn’t touch your personal calls. It only engages with strangers—and sen
               alt="picture of me at flipkart warehouse"
             />
         
+      </>
+    ),
+  },
+  {
+    id: "spill",
+    title: "Spill",
+    description: "A minimalist freewriting app to spill your thoughts out and reflect.",
+    url: "https://tryspill.com",
+    year: 2025,
+    color: "#FFFFFF",
+    accent: "#000206",
+    theme: "inverse",
+    Icon: DeviceTabletSpeaker,
+    content: (
+      <>
+        <Heading id="digital-detox">What is it?</Heading>
+        <p>
+        One distraction-free space to spill your thoughts for a set time — brainstorm ideas, draft scripts, process life, whatever. Plus dictation when your fingers can't keep up, and voice chat with your notes when you need to think out loud.
+        </p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/lMEJB5fiwr8?si=O7xWwxPUZpvfb7VN" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        
+        <Heading id="heads-up">What I did?</Heading>
+        <p>
+          I built Spill after meeting <a href="https://www.linkedin.com/in/vishruth-n/">Vishruth</a> at Network School— we decided to team up and see how things would go. I coded the entire UI of the app, keeping everything clean and minimalist to make writing feel effortless. I also added on-device dictation, so users can just speak and have their words appear instantly, all without sending anything to the cloud. On top of that, I handled the full brand design—from the logo to the overall look and feel. I even shot and edited the cinematic launch video to showcase what Spill is all about. Vishruth built the Reflect feature into the app, adding another layer to the writing experience.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "clayo",
+    title: "Clayo AI",
+    description: "An AI answers unknown callers, so you only get the calls that matter.",
+    url: "https://clayo.ai",
+    year: 2025,
+    color: "#FFFFFF",
+    accent: "#255FF1",
+    theme: "inverse",
+    Icon: DeviceMobileSpeaker,
+    content: (
+      <>
+        <Heading id="digital-detox">What is it?</Heading>
+        <p>
+          AI that screens your calls and sends you summaries instead of interrupting you.
+        </p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/i-GWrbcAQ8E?si=gY9v6NPVa5lWiKni" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <Heading id="heads-up">What I did?</Heading>
+        <p>
+        Clayo was a one of the portfolio projects of my venture studio called <a href="https://arclinelabs.com">Arcline Labs</a>. I helped build the landing page, making sure it clearly communicated what Clayo is all about and looked great visually. I also pitched in with marketing and branding, helping shape how Clayo is presented and making sure everything felt cohesive. Working with the Arcline team made the whole process collaborative and fun.
+        </p>
       </>
     ),
   },
