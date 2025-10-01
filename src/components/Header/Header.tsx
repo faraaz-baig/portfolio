@@ -44,7 +44,7 @@ const Header = () => {
           <a href="https://github.com/faraaz-baig">
             <GitBranch /> GitHub
           </a>
-          <a href="https://twitter.com/faraazofficial">
+          <a href="https://twitter.com/faraazbaig_">
             <TwitterLogo /> Twitter
           </a>
           <a href="https://linkedin.com/in/faraazbaig">
