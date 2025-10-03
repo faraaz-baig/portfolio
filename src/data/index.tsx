@@ -9,6 +9,7 @@ import {
   Brain,
   Camera,
   DeviceTabletSpeaker,
+  Gear,
 } from "@phosphor-icons/react";
 
 import Heading from "../components/Heading/Heading";
@@ -260,4 +261,22 @@ It doesn’t touch your personal calls. It only engages with strangers—and sen
       </>
     ),
   },
+  {
+    id: "cognite",
+    title: "Cognite",
+    description: "High-Performance ML Framework in Rust",
+    url: "https://github.com/faraaz-baig/cognite",
+    year: 2024,
+    theme: "inverse",
+    accent: "#FFD300",
+    Icon: Gear,
+    content: (
+      <>
+        <Heading id="the-brief">What is it?</Heading>
+        <p>Cognite is a high-performance machine learning framework implemented in Rust, designed to leverage GPU acceleration for efficient computation. It aims to provide a fast and memory-efficient alternative to existing ML frameworks.</p>
+      </>
+    ),
+  },
 ] as const;
+
+
