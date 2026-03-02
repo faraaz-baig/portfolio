@@ -225,6 +225,7 @@ It doesn’t touch your personal calls. It only engages with strangers—and sen
     content: (
       <>
         <Heading id="digital-detox">What is it?</Heading>
+        <a href="https://www.producthunt.com/products/spill-2?embed=true&amp;utm_source=badge-top-post-badge&amp;utm_medium=badge&amp;utm_campaign=badge-spill-2" target="_blank" rel="noopener noreferrer"><img alt="Spill - Minimalist freewriting app | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=1001010&amp;theme=light&amp;period=daily&amp;t=1772444856954"/></a>
         <p>
         One distraction-free space to spill your thoughts for a set time — brainstorm ideas, draft scripts, process life, whatever. Plus dictation when your fingers can't keep up, and voice chat with your notes when you need to think out loud.
         </p>
