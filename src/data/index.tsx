@@ -83,7 +83,7 @@ export const projects: ReadonlyArray<Project> = [
         
         <Heading id="whats-next">What's next?</Heading>
         <p>
-        I left Airbound in 2024 after losing conviction in drone delivery as a scalable business. Conversations with officials in India and abroad confirmed my doubts—regulatory and infrastructure hurdles were too high for broad adoption. Meanwhile, pivot to defense tech showed clearer demand and made logical sense. The systems we built felt better suited for it.Although, right now, the company continues to focus on e-commerce and blood delivery, and I hope it makes a lasting impact there.
+        I left Airbound in 2024 after losing conviction in drone delivery as a scalable business. Conversations with officials in India and abroad confirmed my doubts—regulatory and infrastructure hurdles were too high for broad adoption. Meanwhile, pivot to defense tech showed clearer demand and made logical sense. The systems we built felt better suited for it. Although, right now, the company continues to focus on e-commerce and blood delivery, and I hope it makes a lasting impact there.
         </p>
       </>
     ),

@@ -34,7 +34,7 @@ const Header = () => {
     return age;
   };
 
-  const age = getAge(new Date(2002, 7, 9));
+  const age = getAge(new Date(2002, 9, 8));
   return (
     <motion.header variants={variants} initial="start" animate="end">
       <h1 className="intro">
