@@ -24,15 +24,26 @@ const iconStyle: IconProps = {
 };
 
 const Header = () => {
+  const getAge = (dob: Date) => {
+    const today = new Date();
+    let age = today.getFullYear() - dob.getFullYear();
+    const monthDiff = today.getMonth() - dob.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dob.getDate())) {
+      age--;
+    }
+    return age;
+  };
+
+  const age = getAge(new Date(2002, 7, 9));
   return (
     <motion.header variants={variants} initial="start" animate="end">
       <h1 className="intro">
          
-      I'm <span className="highlight">Faraaz Baig</span> a 23 year old serial entrepreneur and an <span className="highlight">
+      I'm <span className="highlight">Faraaz Baig</span> a {age} year old serial entrepreneur and an <span className="highlight">
           <a href="https://faraazventures.com" rel="noopener">
           Angel Investor.
           </a>
-        </span> I'm currenty building{" "}
+        </span> I'm currently building{" "}
         <span className="highlight">
           <a href="https://arclinelabs.com" rel="noopener">
           Arcline Labs.

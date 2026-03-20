@@ -75,6 +75,9 @@ export const projects: ReadonlyArray<Project> = [
         Our vision resonated with investors. When we closed our <a href="https://inc42.com/buzz/drone-startup-airbound-bags-funding-from-lightspeed/">first funding round of over $2M with backers including Lightspeed and Draper.</a> I made the difficult but confident decision to drop out of my education. The opportunity to build something that could save lives demanded my full commitment.
         </p>
         <p>
+      Soon after, the company raised over $30M in a new round led by Greenoaks, as reported by <a href="https://www.moneycontrol.com/news/business/startup/drone-startup-airbound-to-raise-30-million-in-fresh-funding-led-by-greenoaks-13720475.html">Moneycontrol</a>.
+        </p>
+        <p>
         The journey took us across India as we launched pilot programs in various regions, proving not just that our technology worked, but that it could operate sustainably in challenging environments. We expanded our partnerships to include government initiatives in both India and Africa, scaling our impact beyond what I had initially imagined.
         </p>
         
@@ -200,9 +203,12 @@ It doesn’t touch your personal calls. It only engages with strangers—and sen
         </p>
         
           <p>
-          The tricky part came when it was time to deliver. While I handled my end of the bargain by bringing these valuable clients to the table, the technical co-founders I'd brought on board struggled to build the production-ready product we needed. Despite having these amazing opportunities lined up, we couldn't fully capitalize on them due to execution challenges on the product side. Hence, we had to shut shop.
+          The tricky part came when it was time to deliver. While I handled my end of the bargain by bringing these valuable clients to the table, the technical co-founders I'd brought on board struggled to build the production-ready product we needed. Despite having these amazing opportunities lined up, we couldn't fully capitalize on them due to execution challenges on the product side. Hence, we had to shut shop. 
 
           </p>
+        <p>
+        We had raised over a million dollars; since we shut shop, we returned all the term sheets and the capital back to investors.
+        </p>
         
           <img
               src={flipkart_png}
@@ -279,5 +285,3 @@ It doesn’t touch your personal calls. It only engages with strangers—and sen
     ),
   },
 ] as const;
-
-
