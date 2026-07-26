@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import FloatingPlayer from "./FloatingPlayer";
 import portraitUrl from "./assets/portrait.webp";
 import flipkartPlateUrl from "./assets/flipkart-plate.webp";
 import ornamentUrl from "./assets/ornament.webp";
@@ -1563,8 +1564,9 @@ export default function App() {
              </article>
            </>
             )}
-        </div>
+         </div>
       </div>
+      <FloatingPlayer />
     </div>
   );
 }

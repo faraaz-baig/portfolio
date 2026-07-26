@@ -590,6 +590,52 @@ button {
 .hv2:hover { color: #8f2e18; }
 
 /* ------------------------------------------------------------------ */
+/* Floating music player                                             */
+/* ------------------------------------------------------------------ */
+
+.floating-player {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 1000;
+}
+
+@media (max-width: 640px) {
+  .floating-player {
+    bottom: 100px;
+    right: 12px;
+  }
+
+  .floating-player > div {
+    padding: 4px !important;
+  }
+
+  .floating-player > div > div {
+    padding: 8px 11px !important;
+    gap: 10px !important;
+  }
+
+  .floating-player-dropcap {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .floating-player-dropcap-inner {
+    font-size: 22px !important;
+  }
+
+  .floating-player-title {
+    max-width: 120px !important;
+    font-size: 13px !important;
+  }
+
+  .floating-player-play {
+    width: 32px !important;
+    height: 32px !important;
+  }
+}
+
+/* ------------------------------------------------------------------ */
 /* Responsive refinements                                              */
 /* ------------------------------------------------------------------ */
 
