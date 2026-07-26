@@ -212,7 +212,7 @@ export default function App() {
                     Before it there were drones, a warehouse robotics company, a writing app, a podcast, and a few things that did not survive contact with reality. My downtime goes to riding horses, travelling, and racing motorbikes.
                   </p>
                   <p style={{ margin: "0", fontSize: "19px", lineHeight: "32px", color: "#4a453c", maxWidth: "54ch", textWrap: "pretty" }}>
-                    What follows is everything worth writing down — thirteen entries, newest first, including the ones that ended badly.
+                    What follows is everything worth writing down — fourteen entries, newest first, including the ones that ended badly.
                   </p>
                 </div>
               </div>
