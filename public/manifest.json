@@ -1,6 +1,6 @@
 {
   "short_name": "Faraaz Baig",
-  "name": "Faraaz Baig is a serial entrepreneur",
+  "name": "Faraaz Baig — Entrepreneur, Investor & Creative Director",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#f1ece1",
+  "background_color": "#f1ece1"
 }
