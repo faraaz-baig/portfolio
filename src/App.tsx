@@ -5,7 +5,6 @@ import ornamentUrl from "./assets/ornament.webp";
 import ornamentStripUrl from "./assets/ornament-strip.webp";
 import frontispieceUrl from "./assets/frontispiece.webp";
 import crestUrl from "./assets/crest.webp";
-import impactCoverUrl from "./assets/impact-cover.webp";
 import copablesWorkUrl from "./assets/copables-work.webp";
 import summit1517Url from "./assets/1517-summit.webp";
 import emergentCowenUrl from "./assets/emergent-cowen.webp";
@@ -31,13 +30,11 @@ const SLUGS = [
   "cerebras",
   "spill",
   "unscan",
-  "cognite",
   "ondeck",
   "airbound",
   "fund1517",
   "emergent",
   "thiel",
-  "impact",
 ] as const;
 
 /* Links & films (defaults carried over from the design). */
@@ -212,7 +209,7 @@ export default function App() {
                     Before it there were drones, a warehouse robotics company, a writing app, a podcast, and a few things that did not survive contact with reality. My downtime goes to riding horses, travelling, and racing motorbikes.
                   </p>
                   <p style={{ margin: "0", fontSize: "19px", lineHeight: "32px", color: "#4a453c", maxWidth: "54ch", textWrap: "pretty" }}>
-                    What follows is everything worth writing down — fourteen entries, newest first, including the ones that ended badly.
+                    What follows is everything worth writing down — twelve entries, newest first, including the ones that ended badly.
                   </p>
                 </div>
               </div>
@@ -225,7 +222,7 @@ export default function App() {
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", alignItems: "baseline", justifyContent: "space-between", paddingBottom: "16px" }}>
                 <h2 style={{ margin: "0", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontWeight: "400", fontSize: "16px", letterSpacing: "0.26em", textTransform: "uppercase", color: "#1b1916" }}>Contents</h2>
-                <span style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Fourteen entries · 2019–2026</span>
+                <span style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Twelve entries · 2021–2026</span>
               </div>
               <div style={{ height: "3px", borderTop: "1px solid #1b1916", borderBottom: "1px solid #1b1916" }} />
               <button type="button" onClick={go('copables')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: "0s" }} className="hv1 toc-btn">
@@ -253,13 +250,14 @@ export default function App() {
                   <span style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Growth</span>
                 </span>
                 <span className="toc-tag" style={{ fontStyle: "italic", fontSize: "17px", lineHeight: "1.45", color: "#5b554a", maxWidth: "62ch" }}>
-                  Helped take a US fintech app from zero to $40M ARR in under four months.
+                   Helped take the company from $5M to $72M ARR — including a US fintech app from zero to $40M in under four months.
                 </span>
               </button>
               <button type="button" onClick={go('arcline')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".04s" }} className="hv1 toc-btn">
                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>III</span>
                 <span style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
                   <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1" }}>Arcline Labs</span>
+                  <span style={{ flexShrink: 0, alignSelf: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "9px", letterSpacing: "0.11em", textTransform: "uppercase", color: "#8f2e18", border: "1px solid rgba(143,46,24,0.45)", padding: "3px 7px", whiteSpace: "nowrap" }}>6-figure exit</span>
                   <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
@@ -327,22 +325,8 @@ export default function App() {
                   Autonomous drones that counted and reconciled warehouse inventory.
                 </span>
               </button>
-              <button type="button" onClick={go('cognite')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".24s" }} className="hv1 toc-btn">
-                <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>VIII</span>
-                <span style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1" }}>Cognite</span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
-                </span>
-                <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
-                  <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2024</span>
-                  <span style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Project</span>
-                </span>
-                <span className="toc-tag" style={{ fontStyle: "italic", fontSize: "17px", lineHeight: "1.45", color: "#5b554a", maxWidth: "62ch" }}>
-                  A high-performance machine learning framework written in Rust.
-                </span>
-              </button>
               <button type="button" onClick={go('ondeck')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".28s" }} className="hv1 toc-btn">
-                <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>IX</span>
+                <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>VIII</span>
                 <span style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
                   <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1" }}>On Deck Fellow</span>
                   <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
@@ -356,9 +340,10 @@ export default function App() {
                 </span>
               </button>
               <button type="button" onClick={go('airbound')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".32s" }} className="hv1 toc-btn">
-                <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>X</span>
+                <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>IX</span>
                 <span style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
                   <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1" }}>Airbound</span>
+                  <span style={{ flexShrink: 0, alignSelf: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "9px", letterSpacing: "0.11em", textTransform: "uppercase", color: "#8f2e18", border: "1px solid rgba(143,46,24,0.45)", padding: "3px 7px", whiteSpace: "nowrap" }}>$50M+ raised</span>
                   <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
@@ -370,7 +355,7 @@ export default function App() {
                 </span>
               </button>
               <button type="button" onClick={go('fund1517')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".34s" }} className="hv1 toc-btn">
-                <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>XI</span>
+                <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>X</span>
                 <span style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
                   <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1" }}>1517 Fund</span>
                   <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
@@ -384,7 +369,7 @@ export default function App() {
                 </span>
               </button>
               <button type="button" onClick={go('emergent')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".36s" }} className="hv1 toc-btn">
-                <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>XII</span>
+                <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>XI</span>
                 <span style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
                   <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1" }}>Emergent Ventures</span>
                   <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
@@ -397,8 +382,8 @@ export default function App() {
                   A grant programme run by Tyler Cowen, backed by Thiel and Schmidt.
                 </span>
                </button>
-               <button type="button" onClick={go('thiel')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".4s" }} className="hv1 toc-btn">
-                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>XIII</span>
+                <button type="button" onClick={go('thiel')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid #1b1916", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".4s" }} className="hv1 toc-btn">
+                  <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>XII</span>
                  <span style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
                    <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1" }}>Thiel Fellowship</span>
                    <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
@@ -409,18 +394,6 @@ export default function App() {
                  </span>
                  <span className="toc-tag" style={{ fontStyle: "italic", fontSize: "17px", lineHeight: "1.45", color: "#5b554a", maxWidth: "62ch" }}>Made it to the last round — the interview with four Thiel Fellows.</span>
                </button>
-               <button type="button" onClick={go('impact')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid #1b1916", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".44s" }} className="hv1 toc-btn">
-                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>XIV</span>
-                <span style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1" }}>Impact Act</span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
-                </span>
-                <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
-                  <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2019</span>
-                  <span style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Project</span>
-                </span>
-                <span className="toc-tag" style={{ fontStyle: "italic", fontSize: "17px", lineHeight: "1.45", color: "#5b554a", maxWidth: "62ch" }}>A long-form self-improvement podcast, hosted in my teens.</span>
-              </button>
               <figure style={{ margin: "0", padding: "clamp(56px, 7vw, 96px) 0 0", animation: "fadeIn .6s ease both" }}>
                 <div style={{ border: "1px solid rgba(27,25,22,0.45)", padding: "6px", background: "#ece5d7" }}>
                   <div style={{ border: "1px solid rgba(27,25,22,0.2)" }}>
@@ -459,7 +432,7 @@ export default function App() {
             <article style={{ animation: "fadeIn .45s ease both" }}>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
                 <button type="button" onClick={go('index')} className="hv2">←{' '}{' '}Contents</button>
-                <span style={{ color: "#6f6759" }}>I / XIV</span>
+                <span style={{ color: "#6f6759" }}>I / XII</span>
               </div>
               <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
                 <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
@@ -546,7 +519,7 @@ export default function App() {
             <article style={{ animation: "fadeIn .45s ease both" }}>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
                 <button type="button" onClick={go('index')} className="hv2">←{' '}{' '}Contents</button>
-                <span style={{ color: "#6f6759" }}>II / XIV</span>
+                <span style={{ color: "#6f6759" }}>II / XII</span>
               </div>
               <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
                 <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
@@ -556,7 +529,7 @@ export default function App() {
                   <p style={{ margin: "0 0 24px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "#8f2e18" }}>Growth · 2025—2026</p>
                   <h2 style={{ margin: "0", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontWeight: "400", fontSize: "clamp(40px, 7vw, 88px)", lineHeight: "1", letterSpacing: "-0.015em" }}><a href="https://triplespeed.com" target="_blank" rel="noreferrer" className="hv2" style={{ textDecoration: "none" }}>Triplespeed<span aria-hidden="true" style={{ fontSize: "0.32em", verticalAlign: "top", marginLeft: "0.14em", color: "#8f2e18", fontFamily: "'IBM Plex Mono', ui-monospace, monospace" }}>↗</span></a></h2>
                   <p style={{ margin: "24px 0 0", fontStyle: "italic", fontSize: "clamp(20px, 2.1vw, 26px)", lineHeight: "1.45", color: "#4a453c", maxWidth: "42ch", textWrap: "pretty" }}>
-                    Helped take a US fintech app from zero to $40M in ARR in under four months.
+                    Helped take the company from $5M to $72M in ARR — including a US fintech app from zero to $40M in under four months.
                   </p>
                 </header>
               </div>
@@ -577,8 +550,8 @@ export default function App() {
                       <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>$0 → $40M ARR</dd>
                     </div>
                     <div>
-                      <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Utility app</dt>
-                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>$5M → $14M ARR</dd>
+                      <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Company</dt>
+                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>$5M → $72M ARR</dd>
                     </div>
                     <div>
                       <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Chargebacks</dt>
@@ -595,7 +568,7 @@ export default function App() {
                     <span style={{ float: "left", width: "74px", height: "74px", margin: "4px 18px 6px 0", border: "1px solid rgba(27,25,22,0.5)", padding: "3px", background: "#ece5d7", display: "flex" }}>
                       <span style={{ flex: "1", border: "1px solid rgba(27,25,22,0.22)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "46px", lineHeight: "1", color: "#8f2e18" }}>T</span>
                     </span>
-                    riplespeed was doing about $5M in ARR on one utility app — built over five months — when I joined the core team. In the months after, we grew that app to around $14M and took a new fintech app in America from zero to $40M in ARR in under four.
+                    riplespeed was doing about $5M in ARR on one utility app — built over five months — when I joined the core team. In the months after, we grew that app to around $14M and took a new fintech app in America from zero to $40M in ARR in under four — across the portfolio, the company went from $5M to $72M in ARR.
                   </p>
                   <h3 style={{ margin: "48px 0 16px", display: "flex", alignItems: "baseline", gap: "10px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#8f2e18", fontWeight: "400" }}>
                     <span>¶</span>
@@ -629,7 +602,7 @@ export default function App() {
             <article style={{ animation: "fadeIn .45s ease both" }}>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
                 <button type="button" onClick={go('index')} className="hv2">←{'\u00a0'}{'\u00a0'}Contents</button>
-                <span style={{ color: "#6f6759" }}>III / XIV</span>
+                <span style={{ color: "#6f6759" }}>III / XII</span>
               </div>
               <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
                 <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
@@ -716,7 +689,7 @@ export default function App() {
             <article style={{ animation: "fadeIn .45s ease both" }}>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
                 <button type="button" onClick={go('index')} className="hv2">←{'\u00a0'}{'\u00a0'}Contents</button>
-                <span style={{ color: "#6f6759" }}>IV / XIV</span>
+                <span style={{ color: "#6f6759" }}>IV / XII</span>
               </div>
               <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
                 <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
@@ -819,7 +792,7 @@ export default function App() {
             <article style={{ animation: "fadeIn .45s ease both" }}>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
                 <button type="button" onClick={go('index')} className="hv2">←{'\u00a0'}{'\u00a0'}Contents</button>
-                <span style={{ color: "#6f6759" }}>V / XIV</span>
+                <span style={{ color: "#6f6759" }}>V / XII</span>
               </div>
               <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
                 <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
@@ -891,7 +864,7 @@ export default function App() {
             <article style={{ animation: "fadeIn .45s ease both" }}>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
                 <button type="button" onClick={go('index')} className="hv2">←{'\u00a0'}{'\u00a0'}Contents</button>
-                <span style={{ color: "#6f6759" }}>VI / XIV</span>
+                <span style={{ color: "#6f6759" }}>VI / XII</span>
               </div>
               <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
                 <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
@@ -1014,7 +987,7 @@ export default function App() {
             <article style={{ animation: "fadeIn .45s ease both" }}>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
                 <button type="button" onClick={go('index')} className="hv2">←{'\u00a0'}{'\u00a0'}Contents</button>
-                <span style={{ color: "#6f6759" }}>VII / XIV</span>
+                <span style={{ color: "#6f6759" }}>VII / XII</span>
               </div>
               <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
                 <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
@@ -1042,7 +1015,7 @@ export default function App() {
                     </div>
                     <div>
                       <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Raised</dt>
-                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>Over $1M</dd>
+                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>$500K</dd>
                     </div>
                     <div>
                       <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Outcome</dt>
@@ -1070,7 +1043,7 @@ export default function App() {
                     I ran sales, and the demand side worked. One of India’s largest logistics operators, several global brands and a few listed companies signed pilots, LOIs and NDAs. On paper we had the hardest thing a young company can get: buyers waiting.
                   </p>
                   <p style={{ margin: "0 0 24px", fontSize: "19px", lineHeight: "32px", color: "#262218", maxWidth: "64ch", textWrap: "pretty" }}>
-                    Delivery is where it came apart. The technical co-founders I brought on could not get the system to production, and the window closed with the contracts still sitting on the table. We had raised over a million dollars. Once it was clear we could not ship what we had sold, we returned the term sheets and the capital to our investors and closed the company.
+                    Delivery is where it came apart. The technical co-founders I brought on could not get the system to production, and the window closed with the contracts still sitting on the table. We had raised half a million dollars. Once it was clear we could not ship what we had sold, we returned the term sheets and the capital to our investors and closed the company.
                   </p>
                   <div style={{ margin: "48px 0", padding: "32px 0", borderTop: "1px solid rgba(27,25,22,0.26)", borderBottom: "1px solid rgba(27,25,22,0.26)", maxWidth: "64ch" }}>
                     <p style={{ margin: "0", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(22px, 2.3vw, 29px)", lineHeight: "1.4", fontStyle: "italic", color: "#1b1916", textAlign: "center", textWrap: "pretty" }}>
@@ -1096,80 +1069,12 @@ export default function App() {
                   <span style={{ display: "block", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759", marginBottom: "6px" }}>Previous</span>
                   <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>←{'\u00a0'}Spill</span>
                 </button>
-                <button type="button" onClick={go('cognite')} style={{ textAlign: "right" }} className="hv2">
-                  <span style={{ display: "block", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759", marginBottom: "6px" }}>Next</span>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>Cognite{'\u00a0'}→</span>
-                </button>
-              </nav>
-              <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>VII</p>
-            </article>
-          </>
-          )}
-          {at.cognite && (
-          <>
-            <article style={{ animation: "fadeIn .45s ease both" }}>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
-                <button type="button" onClick={go('index')} className="hv2">←{'\u00a0'}{'\u00a0'}Contents</button>
-                <span style={{ color: "#6f6759" }}>VIII / XIV</span>
-              </div>
-              <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
-                <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
-                  <ImageSlot id="fb-orn-vertical" fit="contain" />
-                </div>
-                <header style={{ flex: "1 1 auto", minWidth: "0", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both" }}>
-                  <p style={{ margin: "0 0 24px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "#8f2e18" }}>Project · 2024</p>
-                  <h2 style={{ margin: "0", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontWeight: "400", fontSize: "clamp(40px, 7vw, 88px)", lineHeight: "1", letterSpacing: "-0.015em" }}><a href="https://github.com/faraaz-baig/cognite" target="_blank" rel="noreferrer" className="hv2" style={{ textDecoration: "none" }}>Cognite<span aria-hidden="true" style={{ fontSize: "0.32em", verticalAlign: "top", marginLeft: "0.14em", color: "#8f2e18", fontFamily: "'IBM Plex Mono', ui-monospace, monospace" }}>↗</span></a></h2>
-                  <p style={{ margin: "24px 0 0", fontStyle: "italic", fontSize: "clamp(20px, 2.1vw, 26px)", lineHeight: "1.45", color: "#4a453c", maxWidth: "42ch", textWrap: "pretty" }}>
-                    A high-performance machine learning framework, written in Rust.
-                  </p>
-                </header>
-              </div>
-              <div style={{ margin: "clamp(40px, 5vw, 64px) 0", height: "1px", background: "rgba(27,25,22,0.26)" }} />
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "clamp(32px, 5vw, 72px)", alignItems: "flex-start" }}>
-                <aside style={{ flex: "0 0 clamp(180px, 19vw, 224px)", borderTop: "1px solid #1b1916", paddingTop: "16px" }}>
-                  <dl style={{ margin: "0", display: "grid", gap: "20px" }}>
-                    <div>
-                      <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Kind</dt>
-                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>Personal project</dd>
-                    </div>
-                    <div>
-                      <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Language</dt>
-                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>Rust</dd>
-                    </div>
-                    <div>
-                      <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Focus</dt>
-                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>GPU acceleration, memory efficiency</dd>
-                    </div>
-                  </dl>
-                </aside>
-                <div style={{ flex: "1 1 520px", minWidth: "280px" }}>
-                  <h3 style={{ margin: "0 0 16px", display: "flex", alignItems: "baseline", gap: "10px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#8f2e18", fontWeight: "400" }}>
-                    <span>¶</span>
-                    <span>What it is</span>
-                  </h3>
-                  <p style={{ margin: "0 0 24px", fontSize: "19px", lineHeight: "32px", color: "#262218", maxWidth: "64ch", textWrap: "pretty" }}>
-                    <span style={{ float: "left", width: "74px", height: "74px", margin: "4px 18px 6px 0", border: "1px solid rgba(27,25,22,0.5)", padding: "3px", background: "#ece5d7", display: "flex" }}>
-                      <span style={{ flex: "1", border: "1px solid rgba(27,25,22,0.22)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "46px", lineHeight: "1", color: "#8f2e18" }}>C</span>
-                    </span>
-                    ognite is a machine learning framework implemented in Rust, built to make proper use of GPU acceleration — an attempt at a faster, more memory-efficient alternative to the frameworks I was working with at the time.
-                  </p>
-                  <p style={{ margin: "0", fontSize: "19px", lineHeight: "32px", color: "#262218", maxWidth: "64ch", textWrap: "pretty" }}>
-                    It is a small thing next to the companies on this list, and I keep it here for an honest reason: it is how I learn. Writing the layer underneath the tools you use every day is the fastest way to stop treating them as magic.
-                  </p>
-                </div>
-              </div>
-              <div style={{ margin: "clamp(48px, 6vw, 80px) 0 0", height: "1px", background: "rgba(27,25,22,0.26)" }} />
-              <nav className="pagenav" style={{ display: "flex", flexWrap: "wrap", gap: "24px", justifyContent: "space-between", alignItems: "baseline", padding: "24px 0 40px" }}>
-                <button type="button" onClick={go('unscan')} className="hv2">
-                  <span style={{ display: "block", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759", marginBottom: "6px" }}>Previous</span>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>←{'\u00a0'}Unscan AI</span>
-                </button>
                 <button type="button" onClick={go('ondeck')} style={{ textAlign: "right" }} className="hv2">
                   <span style={{ display: "block", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759", marginBottom: "6px" }}>Next</span>
                   <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>On Deck Fellow{'\u00a0'}→</span>
                 </button>
               </nav>
-              <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>VIII</p>
+              <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>VII</p>
             </article>
           </>
           )}
@@ -1178,7 +1083,7 @@ export default function App() {
             <article style={{ animation: "fadeIn .45s ease both" }}>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
                 <button type="button" onClick={go('index')} className="hv2">←{'\u00a0'}{'\u00a0'}Contents</button>
-                <span style={{ color: "#6f6759" }}>IX / XIV</span>
+                <span style={{ color: "#6f6759" }}>VIII / XII</span>
               </div>
               <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
                 <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
@@ -1237,16 +1142,16 @@ export default function App() {
               </div>
               <div style={{ margin: "clamp(48px, 6vw, 80px) 0 0", height: "1px", background: "rgba(27,25,22,0.26)" }} />
               <nav className="pagenav" style={{ display: "flex", flexWrap: "wrap", gap: "24px", justifyContent: "space-between", alignItems: "baseline", padding: "24px 0 40px" }}>
-                <button type="button" onClick={go('cognite')} className="hv2">
+                <button type="button" onClick={go('unscan')} className="hv2">
                   <span style={{ display: "block", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759", marginBottom: "6px" }}>Previous</span>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>←{'\u00a0'}Cognite</span>
+                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>←{'\u00a0'}Unscan AI</span>
                 </button>
                 <button type="button" onClick={go('airbound')} style={{ textAlign: "right" }} className="hv2">
                   <span style={{ display: "block", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759", marginBottom: "6px" }}>Next</span>
                   <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>Airbound{'\u00a0'}→</span>
                 </button>
               </nav>
-              <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>IX</p>
+              <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>VIII</p>
             </article>
           </>
           )}
@@ -1255,7 +1160,7 @@ export default function App() {
             <article style={{ animation: "fadeIn .45s ease both" }}>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
                 <button type="button" onClick={go('index')} className="hv2">←{'\u00a0'}{'\u00a0'}Contents</button>
-                <span style={{ color: "#6f6759" }}>X / XIV</span>
+                <span style={{ color: "#6f6759" }}>IX / XII</span>
               </div>
               <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
                 <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
@@ -1294,11 +1199,11 @@ export default function App() {
                     </div>
                     <div>
                       <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Raised</dt>
-                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>$2M+, then $30M+ after my time</dd>
+                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>Over $50M, most after my time</dd>
                     </div>
                     <div>
                       <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Backers</dt>
-                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>Lightspeed, Draper, later Greenoaks</dd>
+                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>Lachy Groom, DoorDash, Lightspeed, Greenoaks and others</dd>
                     </div>
                   </dl>
                   <p style={{ margin: "32px 0 0", paddingTop: "20px", borderTop: "1px solid rgba(27,25,22,0.26)", fontStyle: "italic", fontSize: "16px", lineHeight: "1.5", color: "#5b554a" }}>
@@ -1331,7 +1236,7 @@ export default function App() {
                     <a href="https://inc42.com/buzz/drone-startup-airbound-bags-funding-from-lightspeed/" target="_blank" rel="noreferrer">$2M</a>{' '}
                     with Lightspeed and Draper among the backers, and I left my education to run the company. The company later raised over{' '}
                     <a href="https://www.moneycontrol.com/news/business/startup/drone-startup-airbound-to-raise-30-million-in-fresh-funding-led-by-greenoaks-13720475.html" target="_blank" rel="noreferrer">$30M</a>{' '}
-                    in a round led by Greenoaks. We flew pilots across several regions of India, which proved the harder thing: not that the aircraft worked, but that it could keep working in difficult conditions. Government programmes in India and Africa followed.
+                    in a round led by Greenoaks — over $50M to date, with Lachy Groom and DoorDash also among the backers. We flew pilots across several regions of India, which proved the harder thing: not that the aircraft worked, but that it could keep working in difficult conditions. Government programmes in India and Africa followed.
                   </p>
                   <h3 style={{ margin: "48px 0 16px", display: "flex", alignItems: "baseline", gap: "10px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#8f2e18", fontWeight: "400" }}>
                     <span>¶</span>
@@ -1389,7 +1294,7 @@ export default function App() {
                   <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>1517 Fund{'\u00a0'}→</span>
                 </button>
               </nav>
-              <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>X</p>
+              <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>IX</p>
             </article>
           </>
           )}
@@ -1398,7 +1303,7 @@ export default function App() {
             <article style={{ animation: "fadeIn .45s ease both" }}>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
                 <button type="button" onClick={go('index')} className="hv2">←{' '}{' '}Contents</button>
-                <span style={{ color: "#6f6759" }}>XI / XIV</span>
+                <span style={{ color: "#6f6759" }}>X / XII</span>
               </div>
               <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
                 <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
@@ -1487,7 +1392,7 @@ export default function App() {
                   <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>Emergent Ventures{' '}→</span>
                 </button>
               </nav>
-              <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>XI</p>
+              <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>X</p>
             </article>
           </>
           )}
@@ -1496,7 +1401,7 @@ export default function App() {
             <article style={{ animation: "fadeIn .45s ease both" }}>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
                 <button type="button" onClick={go('index')} className="hv2">←{'\u00a0'}{'\u00a0'}Contents</button>
-                <span style={{ color: "#6f6759" }}>XII / XIV</span>
+                <span style={{ color: "#6f6759" }}>XI / XII</span>
               </div>
               <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
                 <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
@@ -1573,7 +1478,7 @@ export default function App() {
                    <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>Thiel Fellowship{'\u00a0'}→</span>
                  </button>
               </nav>
-              <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>XII</p>
+              <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>XI</p>
             </article>
           </>
            )}
@@ -1582,7 +1487,7 @@ export default function App() {
              <article style={{ animation: "fadeIn .45s ease both" }}>
                <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
                  <button type="button" onClick={go('index')} className="hv2">←{'\u00a0'}{'\u00a0'}Contents</button>
-                 <span style={{ color: "#6f6759" }}>XIII / XIV</span>
+                 <span style={{ color: "#6f6759" }}>XII / XII</span>
                </div>
                <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
                  <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
@@ -1649,98 +1554,15 @@ export default function App() {
                    <span style={{ display: "block", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759", marginBottom: "6px" }}>Previous</span>
                    <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>←{'\u00a0'}Emergent Ventures</span>
                  </button>
-                 <button type="button" onClick={go('impact')} style={{ textAlign: "right" }} className="hv2">
-                   <span style={{ display: "block", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759", marginBottom: "6px" }}>Next</span>
-                   <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>Impact Act{'\u00a0'}→</span>
-                 </button>
+                  <button type="button" onClick={go('index')} style={{ textAlign: "right" }} className="hv2">
+                    <span style={{ display: "block", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759", marginBottom: "6px" }}>Back to</span>
+                    <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>Contents{'\u00a0'}→</span>
+                  </button>
                </nav>
-               <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>XIII</p>
+               <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>XII</p>
              </article>
            </>
-           )}
-           {at.impact && (
-          <>
-            <article style={{ animation: "fadeIn .45s ease both" }}>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", justifyContent: "space-between", alignItems: "baseline", paddingTop: "16px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
-                <button type="button" onClick={go('index')} className="hv2">←{'\u00a0'}{'\u00a0'}Contents</button>
-                <span style={{ color: "#6f6759" }}>XIV / XIV</span>
-              </div>
-              <div style={{ display: "flex", gap: "clamp(16px, 2.4vw, 30px)", alignItems: "stretch", padding: "clamp(40px, 6vw, 88px) 0 0" }}>
-                <div className="orn-vertical" style={{ flex: "0 0 clamp(36px, 4.2vw, 56px)", alignSelf: "stretch", minHeight: "200px" }}>
-                  <ImageSlot id="fb-orn-vertical" fit="contain" />
-                </div>
-                <header style={{ flex: "1 1 auto", minWidth: "0", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both" }}>
-                  <p style={{ margin: "0 0 24px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "#8f2e18" }}>Project · 2019</p>
-                  <h2 style={{ margin: "0", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontWeight: "400", fontSize: "clamp(40px, 7vw, 88px)", lineHeight: "1", letterSpacing: "-0.015em" }}>Impact Act</h2>
-                  <p style={{ margin: "24px 0 0", fontStyle: "italic", fontSize: "clamp(20px, 2.1vw, 26px)", lineHeight: "1.45", color: "#4a453c", maxWidth: "42ch", textWrap: "pretty" }}>A long-form podcast on self-improvement, made in my teens.</p>
-                </header>
-              </div>
-              <div style={{ margin: "clamp(40px, 5vw, 64px) 0", height: "1px", background: "rgba(27,25,22,0.26)" }} />
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "clamp(32px, 5vw, 72px)", alignItems: "flex-start" }}>
-                <aside style={{ flex: "0 0 clamp(180px, 19vw, 224px)", borderTop: "1px solid #1b1916", paddingTop: "16px" }}>
-                  <dl style={{ margin: "0", display: "grid", gap: "20px" }}>
-                    <div>
-                      <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Role</dt>
-                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>Host, producer, editor</dd>
-                    </div>
-                    <div>
-                      <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Year</dt>
-                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>2019, freshman year</dd>
-                    </div>
-                    <div>
-                      <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Reach</dt>
-                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>1,000 listeners a week</dd>
-                    </div>
-                    <div>
-                      <dt style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759" }}>Ended by</dt>
-                      <dd style={{ margin: "4px 0 0", fontSize: "17px", color: "#33302a" }}>COVID-19</dd>
-                    </div>
-                  </dl>
-                </aside>
-                <div style={{ flex: "1 1 520px", minWidth: "280px" }}>
-                  <h3 style={{ margin: "0 0 16px", display: "flex", alignItems: "baseline", gap: "10px", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#8f2e18", fontWeight: "400" }}>
-                    <span>¶</span>
-                    <span>What it was</span>
-                  </h3>
-                  <p style={{ margin: "0 0 24px", fontSize: "19px", lineHeight: "32px", color: "#262218", maxWidth: "64ch", textWrap: "pretty" }}>
-                    <span style={{ float: "left", width: "74px", height: "74px", margin: "4px 18px 6px 0", border: "1px solid rgba(27,25,22,0.5)", padding: "3px", background: "#ece5d7", display: "flex" }}>
-                      <span style={{ flex: "1", border: "1px solid rgba(27,25,22,0.22)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "46px", lineHeight: "1", color: "#8f2e18" }}>I</span>
-                    </span>
-                    {' '}launched and hosted a long-form podcast in my freshman year of college, with guests including the international cricketer Chris Gayle. I built and led a small production team of video editors and photographers, and did the audio editing and content marketing myself. It reached a thousand listeners a week before COVID-19 ended studio operations.
-                  </p>
-                  <p style={{ margin: "0", fontSize: "19px", lineHeight: "32px", color: "#262218", maxWidth: "64ch", textWrap: "pretty" }}>
-                    It is the oldest entry here and, in an odd way, the most formative. Cold-emailing people far more accomplished than you, then holding a conversation worth an hour of a stranger’s attention, is most of what building a company turned out to require.
-                  </p>
-                  <figure style={{ margin: "40px 0 0", maxWidth: "400px" }}>
-                    <a href="https://podcasts.apple.com/us/podcast/impact-act/id1501541515" target="_blank" rel="noreferrer" style={{ display: "block", textDecoration: "none" }}>
-                      <div style={{ border: "1px solid rgba(27,25,22,0.45)", padding: "6px", background: "#ece5d7" }}>
-                        <div style={{ border: "1px solid rgba(27,25,22,0.2)", aspectRatio: "1 / 1" }}>
-                          <img src={impactCoverUrl} alt="Impact Act — podcast cover" loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
-                        </div>
-                      </div>
-                    </a>
-                    <figcaption style={{ marginTop: "14px", display: "grid", gap: "8px" }}>
-                      <span style={{ fontStyle: "italic", fontSize: "16px", color: "#4a453c" }}>Plate — Impact Act, the podcast</span>
-                      <a href="https://podcasts.apple.com/us/podcast/impact-act/id1501541515" target="_blank" rel="noreferrer" style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#8f2e18", textDecoration: "none" }}>Listen on Apple Podcasts{' '}→</a>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div style={{ margin: "clamp(48px, 6vw, 80px) 0 0", height: "1px", background: "rgba(27,25,22,0.26)" }} />
-              <nav className="pagenav" style={{ display: "flex", flexWrap: "wrap", gap: "24px", justifyContent: "space-between", alignItems: "baseline", padding: "24px 0 40px" }}>
-                 <button type="button" onClick={go('thiel')} className="hv2">
-                   <span style={{ display: "block", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759", marginBottom: "6px" }}>Previous</span>
-                   <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>←{'\u00a0'}Thiel Fellowship</span>
-                 </button>
-                 <button type="button" onClick={go('index')} style={{ textAlign: "right" }} className="hv2">
-                   <span style={{ display: "block", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#6f6759", marginBottom: "6px" }}>Back to</span>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "27px" }}>Contents{'\u00a0'}→</span>
-                </button>
-              </nav>
-              <p style={{ margin: "0", textAlign: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "10px", letterSpacing: "0.24em", color: "#8a8175" }}>XIV</p>
-            </article>
-          </>
-          )}
+            )}
         </div>
       </div>
     </div>
