@@ -595,43 +595,55 @@ button {
 
 .floating-player {
   position: fixed;
-  bottom: 80px;
+  bottom: 20px;
   right: 20px;
   z-index: 1000;
 }
 
 @media (max-width: 640px) {
+  .app-root {
+    padding-bottom: 120px !important;
+  }
+
   .floating-player {
-    bottom: 100px;
-    right: 12px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
   }
 
   .floating-player > div {
-    padding: 4px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.12) !important;
+    padding: 5px !important;
   }
 
   .floating-player > div > div {
-    padding: 8px 11px !important;
-    gap: 10px !important;
+    border-radius: 10px !important;
+    padding: 18px 24px !important;
+    gap: 18px !important;
   }
 
-  .floating-player-dropcap {
-    width: 34px !important;
-    height: 34px !important;
-  }
-
-  .floating-player-dropcap-inner {
-    font-size: 22px !important;
+  .floating-player-info {
+    flex: 1 1 auto !important;
   }
 
   .floating-player-title {
-    max-width: 120px !important;
-    font-size: 13px !important;
+    max-width: none !important;
+    font-size: 16px !important;
+  }
+
+  .floating-player-dropcap {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .floating-player-dropcap-inner {
+    font-size: 30px !important;
   }
 
   .floating-player-play {
-    width: 32px !important;
-    height: 32px !important;
+    width: 44px !important;
+    height: 44px !important;
   }
 }
 

@@ -88,7 +88,7 @@ export default function FloatingPlayer() {
             </span>
           </span>
 
-          <div style={{ display: "grid", gap: "4px", minWidth: 0 }}>
+          <div className="floating-player-info" style={{ display: "grid", gap: "4px", minWidth: 0 }}>
             <span
               style={{
                 fontFamily: "'IBM Plex Mono', ui-monospace, monospace",

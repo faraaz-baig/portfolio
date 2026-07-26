@@ -164,7 +164,7 @@ export default function App() {
   const mailHref = EMAIL ? "mailto:" + EMAIL : "#";
 
   return (
-    <div style={{ minHeight: "100vh", padding: "clamp(8px, 1.6vw, 20px)" }}>
+    <div className="app-root" style={{ minHeight: "100vh", padding: "clamp(8px, 1.6vw, 20px)" }}>
       <div style={{ border: "1px solid rgba(27,25,22,0.5)", padding: "5px", maxWidth: "1340px", margin: "0 auto" }}>
         <div style={{ border: "1px solid rgba(27,25,22,0.22)", padding: "clamp(20px, 3.6vw, 52px)" }}>
           <div className="site-topbar" style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px", alignItems: "baseline", justifyContent: "space-between", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#6f6759" }}>
