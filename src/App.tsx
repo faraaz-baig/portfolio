@@ -229,8 +229,8 @@ export default function App() {
               <button type="button" onClick={go('triplespeed')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: "0s" }} className="hv1 toc-btn">
                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>I</span>
                 <span className="toc-title-row" style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Triplespeed</span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
+                  <span className="toc-title" style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Triplespeed</span>
+                  <span className="toc-leader" style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
                   <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2025—26</span>
@@ -243,9 +243,9 @@ export default function App() {
               <button type="button" onClick={go('airbound')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".02s" }} className="hv1 toc-btn">
                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>II</span>
                 <span className="toc-title-row" style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Airbound</span>
-                  <span className="toc-chip-wrap"><span className="toc-chip" style={{ flexShrink: 0, alignSelf: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "9px", letterSpacing: "0.11em", textTransform: "uppercase", color: "#8f2e18", border: "1px solid rgba(143,46,24,0.45)", padding: "3px 7px", whiteSpace: "nowrap" }}>$50M+ raised</span></span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
+                  <span className="toc-title" style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Airbound</span>
+                  <span className="toc-chip">$50M+ raised</span>
+                  <span className="toc-leader" style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
                   <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2021</span>
@@ -258,9 +258,9 @@ export default function App() {
               <button type="button" onClick={go('arcline')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".04s" }} className="hv1 toc-btn">
                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>III</span>
                 <span className="toc-title-row" style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Arcline Labs</span>
-                  <span className="toc-chip-wrap"><span className="toc-chip" style={{ flexShrink: 0, alignSelf: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "9px", letterSpacing: "0.11em", textTransform: "uppercase", color: "#8f2e18", border: "1px solid rgba(143,46,24,0.45)", padding: "3px 7px", whiteSpace: "nowrap" }}>6-figure exit</span></span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
+                  <span className="toc-title" style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Arcline Labs</span>
+                  <span className="toc-chip">6-figure exit</span>
+                  <span className="toc-leader" style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
                   <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2025</span>
@@ -273,9 +273,9 @@ export default function App() {
               <button type="button" onClick={go('spill')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".08s" }} className="hv1 toc-btn">
                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>IV</span>
                 <span className="toc-title-row" style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Spill</span>
-                  <span className="toc-chip-wrap"><span className="toc-chip" style={{ flexShrink: 0, alignSelf: "center", fontFamily: "'IBM Plex Mono', ui-monospace, monospace", fontSize: "9px", letterSpacing: "0.11em", textTransform: "uppercase", color: "#8f2e18", border: "1px solid rgba(143,46,24,0.45)", padding: "3px 7px", whiteSpace: "nowrap" }}>#2 · Product Hunt</span></span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
+                  <span className="toc-title" style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Spill</span>
+                  <span className="toc-chip">#2 · Product Hunt</span>
+                  <span className="toc-leader" style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
                   <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2025</span>
@@ -288,8 +288,8 @@ export default function App() {
               <button type="button" onClick={go('thiel')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".12s" }} className="hv1 toc-btn">
                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>V</span>
                 <span className="toc-title-row" style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Thiel Fellowship</span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
+                  <span className="toc-title" style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Thiel Fellowship</span>
+                  <span className="toc-leader" style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
                   <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2021</span>
@@ -302,8 +302,8 @@ export default function App() {
               <button type="button" onClick={go('emergent')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".16s" }} className="hv1 toc-btn">
                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>VI</span>
                 <span className="toc-title-row" style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Emergent Ventures</span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
+                  <span className="toc-title" style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Emergent Ventures</span>
+                  <span className="toc-leader" style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
                   <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2021—</span>
@@ -316,8 +316,8 @@ export default function App() {
               <button type="button" onClick={go('cerebras')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".2s" }} className="hv1 toc-btn">
                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>VII</span>
                 <span className="toc-title-row" style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Cerebras Fellow</span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
+                  <span className="toc-title" style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Cerebras Fellow</span>
+                  <span className="toc-leader" style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
                   <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2025—</span>
@@ -330,8 +330,8 @@ export default function App() {
               <button type="button" onClick={go('fund1517')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".24s" }} className="hv1 toc-btn">
                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>VIII</span>
                 <span className="toc-title-row" style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>1517 Fund</span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
+                  <span className="toc-title" style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>1517 Fund</span>
+                  <span className="toc-leader" style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
                   <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2021</span>
@@ -344,8 +344,8 @@ export default function App() {
               <button type="button" onClick={go('clayo')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".28s" }} className="hv1 toc-btn">
                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>IX</span>
                 <span className="toc-title-row" style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Clayo AI</span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
+                  <span className="toc-title" style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Clayo AI</span>
+                  <span className="toc-leader" style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
                   <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2025</span>
@@ -358,8 +358,8 @@ export default function App() {
               <button type="button" onClick={go('copables')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".32s" }} className="hv1 toc-btn">
                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>X</span>
                 <span className="toc-title-row" style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Copables</span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
+                  <span className="toc-title" style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Copables</span>
+                  <span className="toc-leader" style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
                   <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2026</span>
@@ -372,8 +372,8 @@ export default function App() {
               <button type="button" onClick={go('unscan')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid rgba(27,25,22,0.22)", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".36s" }} className="hv1 toc-btn">
                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>XI</span>
                 <span className="toc-title-row" style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Unscan AI</span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
+                  <span className="toc-title" style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>Unscan AI</span>
+                  <span className="toc-leader" style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
                   <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2024</span>
@@ -386,8 +386,8 @@ export default function App() {
               <button type="button" onClick={go('ondeck')} style={{ display: "grid", gridTemplateColumns: "34px minmax(0, 1fr) 116px", gap: "4px 20px", width: "100%", padding: "24px 12px", borderBottom: "1px solid #1b1916", transition: "background .3s ease, color .3s ease, box-shadow .3s ease", animation: "riseIn .55s cubic-bezier(.2,.7,.2,1) both", animationDelay: ".4s" }} className="hv1 toc-btn">
                 <span className="toc-num" style={{ gridRow: "span 2", fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontStyle: "italic", fontSize: "20px", opacity: "0.45", paddingTop: "6px" }}>XII</span>
                 <span className="toc-title-row" style={{ display: "flex", alignItems: "baseline", gap: "14px", minWidth: "0" }}>
-                  <span style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>On Deck Fellow</span>
-                  <span style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
+                  <span className="toc-title" style={{ fontFamily: "'Cormorant Garamond', 'EB Garamond', Georgia, serif", fontSize: "clamp(26px, 2.8vw, 36px)", lineHeight: "1.1", whiteSpace: "nowrap" }}>On Deck Fellow</span>
+                  <span className="toc-leader" style={{ flex: "1", height: "0", borderBottom: "1px dotted rgba(27,25,22,0.32)", transform: "translateY(-7px)" }} />
                 </span>
                 <span className="toc-meta" style={{ gridRow: "span 2", textAlign: "right", display: "grid", gap: "4px", alignContent: "start", paddingTop: "10px" }}>
                   <span style={{ fontSize: "17px", color: "#4a453c", fontVariantNumeric: "oldstyle-nums" }}>2023</span>

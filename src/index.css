@@ -589,9 +589,20 @@ button {
 .hv1:hover { background: #eae2d2; color: #8f2e18; box-shadow: inset 2px 0 0 #8f2e18; }
 .hv2:hover { color: #8f2e18; }
 
-/* Chip wrapper is transparent on desktop — chip flows inline with the title */
-.toc-chip-wrap {
-  display: contents;
+/* Contents entries: the accolade chip that sits beside an entry title */
+.toc-chip {
+  flex: 0 0 auto;
+  align-self: center;
+  max-width: 100%;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 9px;
+  line-height: 1.2;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #8f2e18;
+  border: 1px solid rgba(143, 46, 24, 0.45);
+  padding: 3px 7px;
+  white-space: nowrap;
 }
 
 /* ------------------------------------------------------------------ */
@@ -814,26 +825,26 @@ button {
 /* Responsive refinements                                              */
 /* ------------------------------------------------------------------ */
 
-@media (max-width: 640px) {
-  /* Contents entries: tighten the grid, tagline spans the full width */
+/* Contents entries, narrow desktop / tablet: the title may break across lines
+   and the chip drops to a line of its own rather than running into the meta
+   column. Nothing in column two can outgrow its track from here down. */
+@media (max-width: 720px) {
   .toc-btn {
-    grid-template-columns: 28px minmax(0, 1fr) auto !important;
-    column-gap: 14px !important;
+    grid-template-columns: 30px minmax(0, 1fr) auto !important;
+    column-gap: 16px !important;
   }
 
-  .toc-num {
-    font-size: 17px !important;
-  }
-
-  .toc-tag {
-    grid-column: 2 / -1 !important;
-  }
-
-  /* Chips stay inline with the title; the dotted leader yields space */
   .toc-title-row {
-    flex-wrap: nowrap !important;
+    flex-wrap: wrap !important;
+    gap: 8px 12px !important;
   }
 
+  .toc-title {
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 640px) {
   /* The vertical ornament column is decorative — reclaim the space */
   .orn-vertical {
     display: none !important;
@@ -866,11 +877,81 @@ button {
   }
 }
 
-/* Very small screens: shrink the chip so it stays on the title line */
+/* Contents entries on phones: the entry becomes a single column. Title (with
+   its chip) on the first line, year · section on the second, tagline below —
+   so the title gets the full measure instead of fighting the meta column. */
+@media (max-width: 520px) {
+  .toc-btn {
+    grid-template-columns: 26px minmax(0, 1fr) !important;
+    column-gap: 12px !important;
+    row-gap: 0 !important;
+    padding: 22px 8px !important;
+  }
+
+  .toc-num {
+    grid-area: 1 / 1 !important;
+    font-size: 16px !important;
+    padding-top: 4px !important;
+  }
+
+  .toc-title-row {
+    grid-area: 1 / 2 !important;
+    gap: 9px 10px !important;
+  }
+
+  .toc-title {
+    font-size: 25px !important;
+  }
+
+  /* With the meta moved below, the leader has nothing left to lead to */
+  .toc-leader {
+    display: none !important;
+  }
+
+  .toc-meta {
+    grid-area: 2 / 2 !important;
+    display: flex !important;
+    align-items: baseline !important;
+    gap: 9px !important;
+    text-align: left !important;
+    padding-top: 8px !important;
+  }
+
+  .toc-meta > span:first-child {
+    font-size: 15px !important;
+  }
+
+  .toc-meta > span + span::before {
+    content: "·";
+    margin-right: 9px;
+    opacity: 0.7;
+  }
+
+  .toc-tag {
+    grid-area: 3 / 2 !important;
+    padding-top: 10px !important;
+    font-size: 16px !important;
+  }
+}
+
+/* Very small screens: pull the entry in a notch so the chip keeps its line */
 @media (max-width: 380px) {
+  .toc-btn {
+    column-gap: 10px !important;
+    padding: 20px 4px !important;
+  }
+
+  .toc-num {
+    font-size: 15px !important;
+  }
+
+  .toc-title {
+    font-size: 23px !important;
+  }
+
   .toc-chip {
-    font-size: 8px !important;
-    padding: 2px 5px !important;
-    letter-spacing: 0.08em !important;
+    font-size: 8.5px !important;
+    letter-spacing: 0.09em !important;
+    padding: 3px 6px !important;
   }
 }
