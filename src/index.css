@@ -589,6 +589,11 @@ button {
 .hv1:hover { background: #eae2d2; color: #8f2e18; box-shadow: inset 2px 0 0 #8f2e18; }
 .hv2:hover { color: #8f2e18; }
 
+/* Chip wrapper is transparent on desktop — chip flows inline with the title */
+.toc-chip-wrap {
+  display: contents;
+}
+
 /* ------------------------------------------------------------------ */
 /* Floating music player                                             */
 /* ------------------------------------------------------------------ */
@@ -824,6 +829,11 @@ button {
     grid-column: 2 / -1 !important;
   }
 
+  /* Chips stay inline with the title; the dotted leader yields space */
+  .toc-title-row {
+    flex-wrap: nowrap !important;
+  }
+
   /* The vertical ornament column is decorative — reclaim the space */
   .orn-vertical {
     display: none !important;
@@ -853,5 +863,14 @@ button {
   /* Prev/next: when the pair wraps, keep Next pinned to the right */
   .pagenav > button:last-child {
     margin-left: auto;
+  }
+}
+
+/* Very small screens: shrink the chip so it stays on the title line */
+@media (max-width: 380px) {
+  .toc-chip {
+    font-size: 8px !important;
+    padding: 2px 5px !important;
+    letter-spacing: 0.08em !important;
   }
 }
